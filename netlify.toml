@@ -1,6 +1,8 @@
+# netlify.toml
 [build]
   publish = "src"
   functions = "netlify/functions"
+  command = "npm install node-fetch@2"
 
 [[redirects]]
   from = "/*"
