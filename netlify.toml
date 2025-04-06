@@ -1,10 +1,8 @@
-# netlify.toml
 [build]
-  publish = "public"
+  publish = "src"
   functions = "netlify/functions"
-  command = "npm install node-fetch@2"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
