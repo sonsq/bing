@@ -1,6 +1,6 @@
 # netlify.toml
 [build]
-  publish = "public"
+  publish = "src"
   functions = "netlify/functions"
 
 [[redirects]]
